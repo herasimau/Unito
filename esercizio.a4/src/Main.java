@@ -13,7 +13,7 @@ public class Main {
            System.out.print((int) c + " ");
         }
         System.out.print("\n");
-        System.out.print("Numero carrateri: " + string.length());
+        System.out.print("Numero caratteri: " + string.length());
         }
     }
 
