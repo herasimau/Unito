@@ -31,7 +31,7 @@ public class Main {
             }
         }
 
-        int a = answers.size(); //La grandezza di risposte
+        int a = answers.size(); //La grandezza delle risposte
 
        if(a==4) //Se la grandezza e' uguale a 4 andiamo avanti, altrimenti terminiamo il programma
         {
