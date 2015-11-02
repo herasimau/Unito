@@ -33,7 +33,7 @@ public class Main {
 
         int a = answers.size(); //La grandezza di risposte
 
-       if(a==4) //Le la grandezza e' uguale a 4 andiamo avanti, altrimenti terminiamo il programma
+       if(a==4) //Se la grandezza e' uguale a 4 andiamo avanti, altrimenti terminiamo il programma
         {
             Collections.reverse(answers);// Mettiamo le risposte in ordine
             if (answers.get(0) == si && answers.get(1) == si && answers.get(2) == no && answers.get(3) == no) {
@@ -44,7 +44,7 @@ public class Main {
 
         }
         else {System.exit(0);}
-        
+
 
     }
 }
