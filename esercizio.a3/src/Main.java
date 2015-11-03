@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -11,17 +10,17 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Please make your choice (a-d): ");
-        String c = in.nextLine();
-        if (Objects.equals(c, "a") || Objects.equals(c, "A")){
+        String inputUser = in.nextLine();
+        if (inputUser.equals("a") || inputUser.equals("A")){
             System.out.println("You chose to create new document");
         }
-        else if (Objects.equals(c, "b") || Objects.equals(c, "B")){
+        else if (inputUser.equals("b") || inputUser.equals("B")){
             System.out.println("You chose to open document");
         }
-        else if (Objects.equals(c, "c") || Objects.equals(c, "C")){
+        else if (inputUser.equals("c") || inputUser.equals("C")){
             System.out.println("You chose to save current document");
         }
-        else if (Objects.equals(c, "d") || Objects.equals(c, "D")){
+        else if (inputUser.equals("d") || inputUser.equals("D")){
             System.out.println("You chose to send via email current document");
         }
         else {
