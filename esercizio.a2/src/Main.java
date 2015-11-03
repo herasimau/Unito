@@ -1,23 +1,22 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
-
-class Main
+public class Main
 {
-    public static void main (String[] args) throws java.lang.Exception
+    public static void main (String[] args)
     {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Insserisci un solo carratere: ");
-        String c = in.nextLine();
+        String inputUser = in.nextLine();
 
 
-        if (c.length() > 1) {
+        if (inputUser.length() > 1 || inputUser.isEmpty() )
+        {
             System.out.println("Errore");
         }
-        else {
-            System.out.println("Hai inserito "+c);
+        else
+        {
+            System.out.println("Hai inserito "+inputUser);
         }
 
     }
