@@ -6,9 +6,10 @@ public class SumHundredOdd {
     public static void main(String[] args) {
         int count =0;
         int sum =0;
+        int input;
         do {
             Display.println("Insert odd number: ");
-            int input = Keyboard.readInteger();
+            input = Keyboard.readInteger();
             for(;!isEven(input);)
             {
                 sum += input;
@@ -21,7 +22,8 @@ public class SumHundredOdd {
                 break;
             }
 
-        } while (count<100);
-        Display.print("The sum of first 100 odd numbers is: "+sum);
+        } while (count<100 && input!=-1);
+        switch (count){
+            case 4: Display.print("The sum of first 100 odd numbers is: " + sum);}
     }
 }
