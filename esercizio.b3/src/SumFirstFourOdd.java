@@ -7,7 +7,7 @@ public class SumFirstFourOdd {
         int count = 0;
         int sum = 0;
         int input;
-        
+
         do {
             Display.println("Insert odd number: ");
             input = Keyboard.readInteger();
