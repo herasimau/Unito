@@ -1,30 +1,21 @@
-import java.util.Scanner;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("a. New document");
-        System.out.println("b. Open document");
-        System.out.println("c. Save as ...");
-        System.out.println("d. Mail document to...");
 
-        Scanner in = new Scanner(System.in);
-        System.out.println("Please make your choice (a-d): ");
-        String inputUser = in.nextLine();
-        if (inputUser.equals("a") || inputUser.equals("A")){
-            System.out.println("You chose to create new document");
-        }
-        else if (inputUser.equals("b") || inputUser.equals("B")){
-            System.out.println("You chose to open document");
-        }
-        else if (inputUser.equals("c") || inputUser.equals("C")){
-            System.out.println("You chose to save current document");
-        }
-        else if (inputUser.equals("d") || inputUser.equals("D")){
-            System.out.println("You chose to send via email current document");
-        }
-        else {
-            System.out.println("Errore");
+        Menu.printMenu();
+        int inputAnswer = Keyboard.readCharacter();
+        switch (inputAnswer){
+            case 'a': Display.print("You choose to create a new document");
+                break;
+            case 'b': Display.print("You choose to open document");
+                break;
+            case 'c': Display.print("You choose to save document");
+                break;
+            case 'd': Display.print("You choose to send document");
+                break;
+                default: Display.print("Error. You can choose from a to d");
         }
 
     }
