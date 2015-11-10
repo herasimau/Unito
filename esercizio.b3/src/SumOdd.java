@@ -8,7 +8,7 @@ public class SumOdd {
         {
             Display.println("Insert odd number: ");
             int input = Keyboard.readInteger();
-            if (input%2!=0)
+            if (input%2!=0&&input!=-1)
             {
                 sum +=input;
                 count++;
