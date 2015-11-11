@@ -2,7 +2,7 @@ class Main {
     public static void main(String[] args){
 
         int v;
-        int first;           
+        int first;
         boolean   notFound=true;
 
         first=Keyboard.readInteger();
